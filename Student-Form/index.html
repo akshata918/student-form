@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="studentForm" action="/bin/studentverification" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error-message" id="nameError"></span>
+            </div>
+        
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="25">
+                <span class="error-message" id="ageError"></span>
+            </div>
+        
+            <div>
+                <label for="idFile">Upload Student ID Card:</label>
+                <input type="file" id="idFile" name="idFile">
+                <span class="error-message" id="fileError"></span>
+            </div>
+        
+            <div>
+                <label for="flavor">Bingo Chips Flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="">Select a flavor</option>
+                    <option value="salted">Salted</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="hilli">Chilli</option>
+                    <option value="cream-and-onion">Cream and Onion</option>
+                </select>
+                <span class="error-message" id="flavorError"></span>
+            </div>
+        
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+ <script src="js/index.js"></script>
+</body>
+</html>
