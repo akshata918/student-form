@@ -8,6 +8,7 @@ public class StudentVerificationServlet extends SlingAllMethodsServlet {
         
         String name = request.getParameter("name");
         String age = request.getParameter("age");
+        String flavor = request.getParameter("flavor");
         
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
